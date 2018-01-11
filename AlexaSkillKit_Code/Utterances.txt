@@ -1,12 +1,14 @@
 ResumeWithArtist artist {Artist}
 ResumeWithArtist play artist {Artist}
 ResumeWithArtist play with artist {Artist}
+ResumeWithArtist find artist {Artist}
 ResumeWithArtist start artist {Artist}
 ResumeWithArtist start with artist {Artist}
 ResumeWithArtist search artist {Artist}
 ResumeWithGenre genre {Genre}
 ResumeWithGenre play genre {Genre}
 ResumeWithGenre play with genre {Genre}
+ResumeWithGenre find genre {Genre}
 ResumeWithGenre start genre {Genre}
 ResumeWithGenre start with genre {Genre}
 ResumeWithGenre search genre {Genre}
@@ -26,6 +28,10 @@ ResumeWithGeneralQuery start {psytrance|Query}
 ResumeWithGeneralQuery start {metallica|Query}
 ResumeWithGeneralQuery start {pearl jam|Query}
 ResumeWithGeneralQuery start {electronic dance music|Query}
+ResumeWithGeneralQuery find {psytrance|Query}
+ResumeWithGeneralQuery find {metallica|Query}
+ResumeWithGeneralQuery find {pearl jam|Query}
+ResumeWithGeneralQuery find {electronic dance music|Query}
 ResumeWithPreset preset {Preset}
 ResumeWithPreset start preset {Preset}
 ResumeWithPreset play preset {Preset}

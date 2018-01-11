@@ -1,0 +1,44 @@
+{
+  "session": {
+    "sessionId": "session1234",
+    "application": {
+      "applicationId": "enter your app id here"
+    },
+    "attributes": null,
+    "user": {
+      "userId": null
+    },
+    "new": true
+  },
+  "request": {
+    "type": "IntentRequest",
+    "requestId": "request5678",
+    "intent": {
+      "name": "DeletePreset",
+      "slots": {
+        "Preset": {
+          "name": "Preset",
+          "value": "2"
+        }
+      }
+    },
+    "locale": "en-US",
+    "timestamp": "2018-01-04T06:46:21Z"
+  },
+  "context": {
+    "AudioPlayer": {
+      "playerActivity": "IDLE"
+    },
+    "System": {
+      "application": {
+        "applicationId": "enter your app id here"
+      },
+      "user": {
+        "userId": null
+      },
+      "device": {
+        "supportedInterfaces": {}
+      }
+    }
+  },
+}
