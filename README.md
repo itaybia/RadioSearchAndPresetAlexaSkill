@@ -57,16 +57,16 @@ You will need to edit some variables in the code.
     * **ALEXA_SKILL_APP_ID**: if CHECK_APP_ID is true, then this ID will be matched against intent for this lambda function. You will be able to fill it after we create the skill in step 3.
     * **RADIO_SEARCH_LAMBDA_ID**: fill this with the LAMBDA_ARN mentioned in step 2.10
 12. Right-click on the left side just below "lambda_function.py" and add a new file. Call it: "tunein.py". then copy in my code from
- [\AlexaSkillKit_Code\tunein.py](https://github.com/itaybia/RadioSearchAndPresetAlexaSkill/blob/master/AlexaSkillKit_Code/tunein.py
+ [\AlexaSkillKit_Code\tunein.py](https://github.com/itaybia/RadioSearchAndPresetAlexaSkill/blob/master/AlexaSkillKit_Code/tunein.py)
 13. Right-click on the left side just below "lambda_function.py" and add a new file. Call it: "radiosearch_tunein.py". then copy in my code from
- [\AlexaSkillKit_Code\radiosearch_tunein.py](https://github.com/itaybia/RadioSearchAndPresetAlexaSkill/blob/master/AlexaSkillKit_Code/radiosearch_tunein.py
-14. You can test your function by using the **Configure test event**. Change the name of **Hello World** as needed and paste the contents of any of the relevant xml files found in [\AlexaSkillKit_Code\](https://github.com/itaybia/RadioSearchAndPresetAlexaSkill/blob/master/AlexaSkillKit_Code/) and then **Save** and **Test**.
+ [\AlexaSkillKit_Code\radiosearch_tunein.py](https://github.com/itaybia/RadioSearchAndPresetAlexaSkill/blob/master/AlexaSkillKit_Code/radiosearch_tunein.py)
+14. You can test your function by using the **Configure test event**. Change the name of **Hello World** as needed and paste the contents of any of the relevant xml files found in [\AlexaSkillKit_Code](https://github.com/itaybia/RadioSearchAndPresetAlexaSkill/blob/master/AlexaSkillKit_Code) and then **Save** and **Test**.
     * You should probably set **CHECK_APP_ID** in the lambda function to **False** to test this. At least until you create the Alexa skill and have the actual App ID.
 
 
 ## Step 3 (Create your Alexa Skill and link your Lambda function)
 
-1. Sign in to the **Amazon developer portal**. If you haven�t done so already, you�ll need to create a free account. https://developer.amazon.com/edw/home.html#/
+1. Sign in to the **Amazon developer portal**. If you haven't done so already, you'll need to create a free account. https://developer.amazon.com/edw/home.html#/
 2. From the top navigation bar, select **Alexa**.
 3. Under **Alexa Skills Kit**, choose **Get Started >**.
 4. Choose **Add a New Skill**.
