@@ -1,0 +1,94 @@
+{
+  "intents": [
+    {
+      "intent": "AMAZON.LoopOffIntent"
+    },
+    {
+      "intent": "AMAZON.LoopOnIntent"
+    },
+    {
+      "intent": "AMAZON.NextIntent"
+    },
+    {
+      "intent": "AMAZON.PreviousIntent"
+    },
+    {
+      "intent": "AMAZON.RepeatIntent"
+    },
+    {
+      "intent": "AMAZON.ShuffleOffIntent"
+    },
+    {
+      "intent": "AMAZON.ShuffleOnIntent"
+    },
+    {
+      "intent": "AMAZON.StartOverIntent"
+    },
+    {
+      "intent": "AMAZON.PauseIntent"
+    },
+    {
+      "intent": "AMAZON.StopIntent"
+    },
+    {
+      "intent": "AMAZON.ResumeIntent"
+    },
+    {
+      "intent": "AMAZON.CancelIntent"
+    },
+    {
+      "slots": [
+        {
+          "name": "Artist",
+          "type": "AMAZON.Artist"
+        }
+      ],
+      "intent": "ResumeWithArtist"
+    },
+    {
+      "slots": [
+        {
+          "name": "Genre",
+          "type": "AMAZON.Genre"
+        }
+      ],
+      "intent": "ResumeWithGenre"
+    },
+    {
+      "slots": [
+        {
+          "name": "Query",
+          "type": "AMAZON.LITERAL"
+        }
+      ],
+      "intent": "ResumeWithGeneralQuery"
+    },
+    {
+      "slots": [
+        {
+          "name": "Preset",
+          "type": "AMAZON.NUMBER"
+        }
+      ],
+      "intent": "ResumeWithPreset"
+    },
+    {
+      "slots": [
+        {
+          "name": "Preset",
+          "type": "AMAZON.NUMBER"
+        }
+      ],
+      "intent": "SavePreset"
+    },
+    {
+      "slots": [
+        {
+          "name": "Preset",
+          "type": "AMAZON.NUMBER"
+        }
+      ],
+      "intent": "DeletePreset"
+    }
+  ]
+}
