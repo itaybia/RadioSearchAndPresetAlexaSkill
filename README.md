@@ -62,6 +62,20 @@ You will need to edit some variables in the code.
  [\AlexaSkillKit_Code\radiosearch_tunein.py](https://github.com/itaybia/RadioSearchAndPresetAlexaSkill/blob/master/AlexaSkillKit_Code/radiosearch_tunein.py)
 14. You can test your function by using the **Configure test event**. Change the name of **Hello World** as needed and paste the contents of any of the relevant xml files found in [\AlexaSkillKit_Code](https://github.com/itaybia/RadioSearchAndPresetAlexaSkill/blob/master/AlexaSkillKit_Code) and then **Save** and **Test**.
     * You should probably set **CHECK_APP_ID** in the lambda function to **False** to test this. At least until you create the Alexa skill and have the actual App ID.
+15. If you'd like, you can set the preset stations directly yourself by editing the **Environment variables**. Two entries should be added per preset station:
+    1. URL:
+        * **Key** = PresetX_URL
+        * **Value** = <URL of stream. Notice it has to be in a secure HTTPS form>.
+    2. Name:
+        * **Key** = PresetX_Station_Name
+        * **Value** = <Station name as you'd like it to be spoken by Alexa>.
+    * example:
+        * URL:
+            * **Key** = Preset2_URL
+            * **Value** = https://opml.radiotime.com/Tune.ashx?id=s234168
+        * Name:
+            * **Key** = Preset2_Station_Name
+            * **Value** = Indie experience
 
 
 ## Step 3 (Create your Alexa Skill and link your Lambda function)
