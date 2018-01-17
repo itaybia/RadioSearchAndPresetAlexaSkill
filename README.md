@@ -65,10 +65,10 @@ You will need to edit some variables in the code.
 15. If you'd like, you can set the preset stations directly yourself by editing the **Environment variables**. Two entries should be added per preset station:
     1. URL:
         * **Key** = PresetX_URL
-        * **Value** = <URL of stream. Notice it has to be in a secure HTTPS form>.
+        * **Value** = \<URL of stream. Notice it has to be in a secure HTTPS form\>.
     2. Name:
         * **Key** = PresetX_Station_Name
-        * **Value** = <Station name as you'd like it to be spoken by Alexa>.
+        * **Value** = \<Station name as you'd like it to be spoken by Alexa\>.
     * example:
         * URL:
             * **Key** = Preset2_URL
