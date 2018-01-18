@@ -60,9 +60,10 @@ You will need to edit some variables in the code.
  [\AlexaSkillKit_Code\tunein.py](https://github.com/itaybia/RadioSearchAndPresetAlexaSkill/blob/master/AlexaSkillKit_Code/tunein.py)
 13. Right-click on the left side just below "lambda_function.py" and add a new file. Call it: "radiosearch_tunein.py". then copy in my code from
  [\AlexaSkillKit_Code\radiosearch_tunein.py](https://github.com/itaybia/RadioSearchAndPresetAlexaSkill/blob/master/AlexaSkillKit_Code/radiosearch_tunein.py)
-14. You can test your function by using the **Configure test event**. Change the name of **Hello World** as needed and paste the contents of any of the relevant xml files found in [\AlexaSkillKit_Code](https://github.com/itaybia/RadioSearchAndPresetAlexaSkill/blob/master/AlexaSkillKit_Code) and then **Save** and **Test**.
+14. Scroll down to the **Basic settings** and change the timeout to 5 seconds
+15. You can test your function by using the **Configure test event**. Change the name of **Hello World** as needed and paste the contents of any of the relevant xml files found in [\AlexaSkillKit_Code](https://github.com/itaybia/RadioSearchAndPresetAlexaSkill/blob/master/AlexaSkillKit_Code) and then **Save** and **Test**.
     * You should probably set **CHECK_APP_ID** in the lambda function to **False** to test this. At least until you create the Alexa skill and have the actual App ID.
-15. If you'd like, you can set the preset stations directly yourself by editing the **Environment variables**. Two entries should be added per preset station:
+16. If you'd like, you can set the preset stations directly yourself by editing the **Environment variables**. Two entries should be added per preset station:
     1. URL:
         * **Key** = PresetX_URL
         * **Value** = \<URL of stream. Notice it has to be in a secure HTTPS form\>.
