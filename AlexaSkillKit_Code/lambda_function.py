@@ -187,6 +187,10 @@ def search_genre(genre, called_from_general_query):
 def handle_general_query_request_with_intent(intent):
     print("handle_general_query_request_with_intent")
     query = get_general_query_from_intent(intent)
+    if query.lower() == "music":
+        # if the user said "play music", we treat it like he said "play" and just play the last station
+        return handle_last_played_request()
+
     response = search_artist(query, True)
     # if response is None:
     #     response = search_genre(query, True)
