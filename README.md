@@ -1,6 +1,6 @@
 ## RadioSearchAndPresetAlexaSkill
 
-VERSION v1.0 11/01/2018
+VERSION v1.1 24/04/2018
 
 ***********************************
 
