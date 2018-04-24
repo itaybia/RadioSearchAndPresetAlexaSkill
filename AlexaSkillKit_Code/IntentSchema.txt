@@ -1,94 +1,166 @@
 {
-  "intents": [
-    {
-      "intent": "AMAZON.LoopOffIntent"
-    },
-    {
-      "intent": "AMAZON.LoopOnIntent"
-    },
-    {
-      "intent": "AMAZON.NextIntent"
-    },
-    {
-      "intent": "AMAZON.PreviousIntent"
-    },
-    {
-      "intent": "AMAZON.RepeatIntent"
-    },
-    {
-      "intent": "AMAZON.ShuffleOffIntent"
-    },
-    {
-      "intent": "AMAZON.ShuffleOnIntent"
-    },
-    {
-      "intent": "AMAZON.StartOverIntent"
-    },
-    {
-      "intent": "AMAZON.PauseIntent"
-    },
-    {
-      "intent": "AMAZON.StopIntent"
-    },
-    {
-      "intent": "AMAZON.ResumeIntent"
-    },
-    {
-      "intent": "AMAZON.CancelIntent"
-    },
-    {
-      "slots": [
-        {
-          "name": "Artist",
-          "type": "AMAZON.Artist"
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "my radio",
+            "intents": [
+                {
+                    "name": "AMAZON.LoopOffIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.LoopOnIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NextIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.PreviousIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.RepeatIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.ShuffleOffIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.ShuffleOnIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StartOverIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.PauseIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.ResumeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "ResumeWithArtist",
+                    "slots": [
+                        {
+                            "name": "Artist",
+                            "type": "AMAZON.Artist"
+                        }
+                    ],
+                    "samples": [
+                        "artist {Artist}",
+                        "play artist {Artist}",
+                        "play with artist {Artist}",
+                        "find artist {Artist}",
+                        "start artist {Artist}",
+                        "start with artist {Artist}",
+                        "search artist {Artist}"
+                    ]
+                },
+                {
+                    "name": "ResumeWithGenre",
+                    "slots": [
+                        {
+                            "name": "Genre",
+                            "type": "AMAZON.Genre"
+                        }
+                    ],
+                    "samples": [
+                        "genre {Genre}",
+                        "play genre {Genre}",
+                        "play with genre {Genre}",
+                        "find genre {Genre}",
+                        "start genre {Genre}",
+                        "start with genre {Genre}",
+                        "search genre {Genre}"
+                    ]
+                },
+                {
+                    "name": "ResumeWithGeneralQuery",
+                    "slots": [
+                        {
+                            "name": "Query",
+                            "type": "AMAZON.LITERAL"
+                        }
+                    ],
+                    "samples": [
+                        "play {psytrance|Query}",
+                        "play {metallica|Query}",
+                        "play {pearl jam|Query}",
+                        "play {electronic dance music|Query}",
+                        "search {psytrance|Query}",
+                        "search {metallica|Query}",
+                        "search {pearl jam|Query}",
+                        "search {electronic dance music|Query}",
+                        "query {psytrance|Query}",
+                        "query {metallica|Query}",
+                        "query {pearl jam|Query}",
+                        "query {electronic dance music|Query}",
+                        "start {psytrance|Query}",
+                        "start {metallica|Query}",
+                        "start {pearl jam|Query}",
+                        "start {electronic dance music|Query}",
+                        "find {psytrance|Query}",
+                        "find {metallica|Query}",
+                        "find {pearl jam|Query}",
+                        "find {electronic dance music|Query}"
+                    ]
+                },
+                {
+                    "name": "ResumeWithPreset",
+                    "slots": [
+                        {
+                            "name": "Preset",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "preset {Preset}",
+                        "start preset {Preset}",
+                        "play preset {Preset}"
+                    ]
+                },
+                {
+                    "name": "SavePreset",
+                    "slots": [
+                        {
+                            "name": "Preset",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "save preset {Preset}",
+                        "save to preset {Preset}",
+                        "save in preset {Preset}"
+                    ]
+                },
+                {
+                    "name": "DeletePreset",
+                    "slots": [
+                        {
+                            "name": "Preset",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "delete preset {Preset}",
+                        "remove preset {Preset}"
+                    ]
+                }
+            ],
+            "types": []
         }
-      ],
-      "intent": "ResumeWithArtist"
-    },
-    {
-      "slots": [
-        {
-          "name": "Genre",
-          "type": "AMAZON.Genre"
-        }
-      ],
-      "intent": "ResumeWithGenre"
-    },
-    {
-      "slots": [
-        {
-          "name": "Query",
-          "type": "AMAZON.LITERAL"
-        }
-      ],
-      "intent": "ResumeWithGeneralQuery"
-    },
-    {
-      "slots": [
-        {
-          "name": "Preset",
-          "type": "AMAZON.NUMBER"
-        }
-      ],
-      "intent": "ResumeWithPreset"
-    },
-    {
-      "slots": [
-        {
-          "name": "Preset",
-          "type": "AMAZON.NUMBER"
-        }
-      ],
-      "intent": "SavePreset"
-    },
-    {
-      "slots": [
-        {
-          "name": "Preset",
-          "type": "AMAZON.NUMBER"
-        }
-      ],
-      "intent": "DeletePreset"
     }
-  ]
 }
