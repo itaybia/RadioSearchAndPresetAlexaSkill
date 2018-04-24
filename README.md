@@ -86,17 +86,21 @@ You will need to edit some variables in the code.
 3. Under **Alexa Skills Kit**, choose **Get Started >**.
 4. Choose **Add a New Skill**.
 5. Name your skill. This is the name displayed to users in the Alexa app. RadioSearch, Radio Presets, are all good choices.
-6. Create an invocation name. This is the word or phrase that users will speak to activate the skill. Something like my radio, preset radio, presets.
-7. Set **Audio Player** under the global fields to **Yes**.
-8. Click **Save**.
-9. Choose **Next** to continue to development of the new skill.
-10. In the **Intent Schema** box, paste the JSON code from [\AlexaSkillKit_Code\IntentSchema.txt](https://github.com/itaybia/RadioSearchAndPresetAlexaSkill/blob/master/AlexaSkillKit_Code/IntentSchema.txt)
-11. Skip over the **Custom Slot Types** section.
-12. Under **Sample Utterances** paste in contents of [\AlexaSkillKit_Code\Utterances.txt](https://github.com/itaybia/RadioSearchAndPresetAlexaSkill/blob/master/AlexaSkillKit_Code/Utterances.txt)
-13. Choose **Next** and wait until the interaction model finishes loading, in no more than a few seconds
-14. Select the Endpoint AWS Lambda ARN then paste your LAMBDA_ARN code from step 2.10. Then choose Next.
-15. Under **Service Simulator** you can test the skill.  Write what you would have said to alexa to operate the skill. Logs can be found here https://console.aws.amazon.com/cloudwatch
-16. There is no need to Publish the skill.
+6. Click **Next**.
+7. Select **Custom** and click **Create skill**.
+8. Click on **Invocation** on the list to the left and create an invocation name. This is the word or phrase that users will speak to activate the skill. Something like my radio, preset radio, presets.
+9. Press **Save Model**.
+10. Click on **Interfaces** on the list to the left and set the Audio Player button to ON.
+11. Press **Save Interfaces**.
+12. Click on **JSON Editor** on the list to the left and paste the contents of the file from [\AlexaSkillKit_Code\IntentSchema.txt](https://github.com/itaybia/RadioSearchAndPresetAlexaSkill/blob/master/AlexaSkillKit_Code/IntentSchema.txt)
+13. Press **Save Model**.
+14. Press **Build Model**.
+15. Click on **Endpoint** on the list to the left.
+16. Notice the **Your Skill ID**. This would be used as the **ALEXA_SKILL_APP_ID** from step 2.11.
+17. Select the **Endpoint AWS Lambda ARN** then paste your LAMBDA_ARN code from step 2.10 in the default region box.
+18. Press **Save Endpoints**.
+19. Under the **Test** tab you can test the skill. Write what you would have said to alexa to operate the skill. Logs can be found here https://console.aws.amazon.com/cloudwatch
+20. There is no need to Publish the skill.
 
 
 ************
